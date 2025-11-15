@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int N,t,a[1001][4],s=0,i,j,k;
+int N,t,a[1001][4],s=0,i,j,k;//数组解法
 int main()
 {
 	cin>>N;
@@ -17,7 +17,7 @@ int main()
 		for(k=i+1;k<=N;k++)
 		{
 			if(abs(a[i][3]-a[k][3])>10)
-				continue;
+				continue;//注意此处是continue而不是break
 			for(j=0;j<3;j++)
 				if(abs(a[i][j]-a[k][j])>5)
 				{
